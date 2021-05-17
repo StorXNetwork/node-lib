@@ -1,7 +1,7 @@
 const libstorj = require('..');
 
 const storj = new libstorj.Environment({
-  bridgeUrl: 'https://api.storj.io',
+  bridgeUrl: 'https://api.storx.io',
   bridgeUser: 'user@domain.com',
   bridgePass: 'password',
   encryptionKey: 'abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about',

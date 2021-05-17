@@ -1,19 +1,18 @@
-**Notice: Development on this repository is currently on pause during our v3 rearchitecture. Please see [storj/storj](https://github.com/storj/storj) for ongoing v3 development.**
+# Prerequisites
 
-# node-libstorj
+```
+sudo apt install python build-essential curl
+```
 
-[![Storj.io](https://storj.io/img/storj-badge.svg)](https://storj.io)
-[![Build Status](https://travis-ci.org/Storj/node-libstorj.svg?branch=master)](https://travis-ci.org/Storj/node-libstorj)
-[![npm version](https://badge.fury.io/js/storj.svg)](https://badge.fury.io/js/storj)
-[![Chat on rocket.chat](https://img.shields.io/badge/chat-rocket.chat-red.svg)](https://community.storj.io/channel/dev)
+# node-lib
 
-Node.js library for encrypted file transfer on the Storj network via bindings to [libstorj](https://github.com/Storj/libstorj).
+Node.js library for encrypted file transfer on the StorXNetwork network via bindings to [CLI](https://github.com/StorXNetwork/libstorx).
 
 ## Example Usage
 
 Install via npm:
 ```
-npm install github:storj/node-libstorj --save
+npm install github:StorXNetwork/node-lib --save
 ```
 
 Please see [`./examples`](/examples) directory for example code usage.
@@ -24,7 +23,7 @@ First setup the storj environment with authentication and encryption options:
 const { Environment } = require('storj');
 
 const storj = new Environment({
-  bridgeUrl: 'https://api.storj.io',
+  bridgeUrl: 'https://api.storx.io',
   bridgeUser: 'user@domain.com',
   bridgePass: 'password',
   encryptionKey: 'abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about',
@@ -106,7 +105,7 @@ Methods available on an instance of `Environment`:
 
 ## Development & Testing
 
-If you do not already have `libstorj` installed on your system, you can install from the directions at https://github.com/Storj/libstorj This isn't required, however it's best for development.
+If you do not already have `libstorx` installed on your system, you can install from the directions at https://github.com/StorXNetwork/libstorx This isn't required, however it's best for development.
 
 If you do not have `node-gyp` installed:
 
