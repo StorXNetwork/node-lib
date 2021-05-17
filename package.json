@@ -50,7 +50,7 @@
   },
   "libstorj": {
     "basePath": "./libstorj-2.0.0-beta2",
-    "baseUrl": "https://github.com/StorXNetwork/libstorx/releases/tag/v2.0.0-beta2",
+    "baseUrl": "https://github.com/StorXNetwork/libstorx/releases/download/v2.0.0-beta2",
     "releases": [
       {
         "arch": "arm",
